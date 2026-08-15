@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>União Auto Parts | Peças, Lubrificantes, Baterias e Oficina em Palmeiras de Goiás</title>
+<meta name="description" content="União Auto Parts em Palmeiras de Goiás - GO. Troca de Óleo, Peças Automotivas, Baterias Moura e Jet, Freios, Escapamentos, Lava Jato e Plantão Socorro 24h.">
+<meta name="theme-color" content="#0A0B0E">
+
+<!-- OPEN GRAPH / WHATSAPP & REDES SOCIAIS -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="União Auto Parts">
+<meta property="og:title" content="União Auto Parts | Peças, Lubrificantes, Baterias e Oficina">
+<meta property="og:description" content="Lubrificantes, Troca de Óleo, Peças, Baterias, Freios, Escapamentos, Lava Jato e Plantão 24h em Palmeiras de Goiás - GO. Fale conosco!">
+<meta property="og:image" content="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp">
+<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo União Auto Parts">
+<meta property="og:locale" content="pt_BR">
+
+<!-- TWITTER CARDS -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="União Auto Parts | Peças, Lubrificantes e Oficina">
+<meta name="twitter:description" content="Especialistas em Troca de Óleo, Baterias, Freios, Escapamentos e Manutenção em Palmeiras de Goiás - GO.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp">
+
+<!-- FAVICON & PWA ICONS -->
+<link rel="icon" href="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp" type="image/webp">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp">
+<link id="manifest-link" rel="manifest">
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Montserrat:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME 6.5.2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- TAILWIND CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            yellow: '#FFE500',      // Amarelo Raio Principal da Logo
+            yellowDark: '#EAB308',  // Dourado Automotivo
+            yellowLight: '#FFF566', // Amarelo Brilho
+            dark: '#08090C',        // Preto Carvão Profundo
+            surface: '#111318',     // Cartão / Superfície
+            surface2: '#181B22',    // Superfície Elevada
+            border: '#232732',      // Borda Metálica
+            red: '#EF4444',         // Vermelho Plantão / Alerta
+            whatsapp: '#25D366',    // Verde WhatsApp
+            pix: '#32BCAD'          // Ciano PIX
+          }
+        },
+        fontFamily: {
+          display: ['"Barlow Condensed"', 'sans-serif'],
+          heading: ['"Montserrat"', 'sans-serif'],
+          mono: ['"Space Mono"', 'monospace'],
+          body: ['"Inter"', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<!-- QR CODE ENGINE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+  * { -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #08090C;
+    color: #F3F4F6;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: #FFE500; color: #08090C; }
+  ::-webkit-scrollbar { width: 7px; height: 7px; }
+  ::-webkit-scrollbar-track { background: #08090C; }
+  ::-webkit-scrollbar-thumb { background: #232732; border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: #FFE500; }
+
+  /* TEXTURA DE METAL PERFURADO AUTOMOTIVO (IDÊNTICA À LOGO-FUNDO) */
+  .bg-automotive-grid {
+    background-color: #08090C;
+    background-image: 
+      radial-gradient(ellipse 900px 500px at 15% -5%, rgba(255, 229, 0, 0.08), transparent 65%),
+      radial-gradient(ellipse 700px 550px at 100% 15%, rgba(239, 68, 68, 0.05), transparent 60%),
+      radial-gradient(circle at 50% 50%, rgba(20, 24, 32, 0.7) 0%, rgba(8, 9, 12, 0.98) 100%),
+      radial-gradient(#1c202a 1.2px, transparent 1.2px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 14px 14px;
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+
+  .glass {
+    background: rgba(12, 14, 18, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .card-auto {
+    background: #111318;
+    border: 1px solid #232732;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-auto:hover {
+    border-color: rgba(255, 229, 0, 0.45);
+    box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.6);
+  }
+
+  /* BOTÃO AMARELO ELÉTRICO UNIAO AUTO PARTS */
+  .btn-lightning {
+    background: linear-gradient(135deg, #FFE500 0%, #F59E0B 100%);
+    color: #08090C;
+    font-weight: 800;
+    box-shadow: 0 4px 20px rgba(255, 229, 0, 0.28);
+    transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+  }
+  .btn-lightning:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+    box-shadow: 0 6px 26px rgba(255, 229, 0, 0.45);
+  }
+  .btn-lightning:active { transform: translateY(0); }
+
+  .lightning-glow {
+    text-shadow: 0 0 20px rgba(255, 229, 0, 0.45);
+  }
+
+  #progress-bar {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: linear-gradient(90deg, #EF4444, #FFE500);
+    z-index: 99999;
+    box-shadow: 0 0 12px rgba(255, 229, 0, 0.8);
+    transition: width .08s linear;
+  }
+
+  /* SPLASH */
+  #splash {
+    position: fixed; inset: 0; background: #08090C; z-index: 999999;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    transition: opacity .45s ease, visibility .45s ease;
+  }
+  #splash.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+  .splash-track { width: 220px; height: 4px; background: #181B22; border-radius: 4px; overflow: hidden; }
+  .splash-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #EF4444, #FFE500); transition: width .1s linear; }
+
+  /* LIVE PULSE DOT */
+  .live-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .live-dot.on { background: #25D366; box-shadow: 0 0 10px #25D366; animation: pulseGlow 1.6s infinite; }
+  .live-dot.off { background: #EF4444; box-shadow: 0 0 8px #EF4444; }
+  @keyframes pulseGlow { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+  /* CAROUSEL */
+  .carousel-track {
+    display: flex; gap: 14px; overflow-x: auto;
+    cursor: grab; scrollbar-width: none; padding: 6px 2px;
+    user-select: none; -webkit-user-select: none;
+  }
+  .carousel-track::-webkit-scrollbar { display: none; }
+  .carousel-track.dragging { cursor: grabbing; }
+  .carousel-item { flex: 0 0 auto; }
+
+  /* MODAL */
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(6px);
+    z-index: 9998; display: none; align-items: flex-end; justify-content: center;
+  }
+  @media(min-width: 768px) { .modal-backdrop { align-items: center; } }
+  .modal-backdrop.open { display: flex; }
+  .modal-panel {
+    background: #111318; border: 1px solid #232732; width: 100%; max-width: 480px;
+    border-radius: 20px 20px 0 0; max-height: 88vh; overflow-y: auto;
+    animation: slideUp .28s ease;
+  }
+  @media(min-width: 768px) { .modal-panel { border-radius: 16px; } }
+  @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+  .accordion-body { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .accordion-body.open { max-height: 600px; }
+
+  .fab-shift { transition: transform .35s cubic-bezier(0.16, 1, 0.3, 1), opacity .3s ease; }
+  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+</style>
+</head>
+
+<body class="bg-automotive-grid text-gray-100 font-body">
+
+<div id="progress-bar"></div>
+
+<!-- SPLASH SCREEN -->
+<div id="splash">
+  <div class="relative flex items-center justify-center mb-6">
+    <div class="absolute inset-0 bg-brand-yellow/15 blur-2xl rounded-full"></div>
+    <img src="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp" alt="União Auto Parts" class="w-56 max-w-[80vw] object-contain relative z-10 filter drop-shadow-[0_0_25px_rgba(255,229,0,0.4)]">
+  </div>
+  <div class="splash-track"><div class="splash-fill" id="splash-fill"></div></div>
+  <p class="font-mono text-brand-yellow text-xs mt-3 tracking-widest uppercase font-bold" id="splash-count">0%</p>
+</div>
+
+<!-- HEADER & STATUS BAR DINÂMICA -->
+<header class="fixed top-0 left-0 right-0 z-50">
+  <div class="glass border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 md:px-8 h-16 flex items-center justify-between gap-2">
+      <!-- LOGO -->
+      <a href="#home" class="flex items-center gap-2 shrink-0 py-1">
+        <img src="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp" alt="União Auto Parts Logo" class="h-9 sm:h-11 md:h-12 object-contain hover:scale-105 transition-transform">
+      </a>
+
+      <!-- MENU DESKTOP -->
+      <nav class="hidden lg:flex items-center gap-7 font-mono text-xs uppercase tracking-widest text-gray-300">
+        <a href="#servicos" class="hover:text-brand-yellow transition-colors">Serviços</a>
+        <a href="#marcas" class="hover:text-brand-yellow transition-colors">Marcas</a>
+        <a href="#lavajato" class="hover:text-brand-yellow transition-colors">Lava Jato</a>
+        <a href="#horarios" class="hover:text-brand-yellow transition-colors">Horários</a>
+        <a href="#localizacao" class="hover:text-brand-yellow transition-colors">Localização</a>
+      </nav>
+
+      <!-- BOTÕES DE AÇÃO DO TOPO -->
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="downloadVCard()" title="Salvar Contato na Agenda" class="flex items-center justify-center gap-1.5 sm:gap-2 border border-brand-border bg-brand-surface px-3 sm:px-3.5 py-2 rounded-xl text-[11px] sm:text-xs font-mono uppercase tracking-wide text-white hover:border-brand-yellow hover:text-brand-yellow transition-colors shadow-sm">
+          <i class="fa-solid fa-address-book text-brand-yellow text-xs sm:text-sm"></i>
+          <span class="font-bold whitespace-nowrap">Salvar Contato</span>
+        </button>
+
+        <button onclick="openModal('share-modal')" title="Compartilhar / Baixar App" class="w-9 h-9 flex items-center justify-center rounded-xl border border-brand-border bg-brand-surface hover:border-brand-yellow hover:text-brand-yellow transition-colors text-white">
+          <i class="fa-solid fa-share-nodes text-brand-yellow text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE STATUS DINÂMICA (HORÁRIO DE GOIÁS + PLANTÃO 24H SOCORRO) -->
+  <div id="status-bar" class="w-full bg-[#0c0e12]/95 backdrop-blur-md border-b border-brand-border py-2 px-3 sm:px-6 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between text-xs font-mono">
+      <div class="flex items-center gap-2 overflow-hidden pr-2">
+        <span id="bar-dot" class="live-dot off shrink-0"></span>
+        <span id="bar-status-badge" class="font-bold text-[11px] uppercase tracking-wider shrink-0">Verificando...</span>
+        <span class="text-gray-600 hidden sm:inline">•</span>
+        <span id="bar-status-text" class="text-gray-300 truncate text-[11px]">Calculando expediente da oficina...</span>
+      </div>
+
+      <!-- BADGE DESTAQUE PLANTÃO 24H -->
+      <div class="flex items-center gap-2 shrink-0">
+        <span class="hidden md:inline-flex items-center gap-1 px-2 py-0.5 rounded bg-brand-red/15 border border-brand-red/30 text-brand-red text-[10px] font-bold uppercase tracking-wider animate-pulse">
+          <i class="fa-solid fa-truck-medical"></i> Plantão 24h Socorro
+        </span>
+        <a href="#horarios" class="text-brand-yellow hover:underline font-bold shrink-0 text-[11px] flex items-center gap-1 ml-1">
+          Ver Horários <i class="fa-solid fa-chevron-right text-[9px]"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO PRINCIPAL -->
+<section id="home" class="relative pt-32 pb-12 md:pt-40 md:pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
+  <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    
+    <!-- COLUNA PRINCIPAL ESQUERDA -->
+    <div class="lg:col-span-7">
+      
+      <!-- BADGE DE LOCALIZAÇÃO -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-surface border border-brand-border mb-5 shadow-sm">
+        <i class="fa-solid fa-location-dot text-brand-yellow text-xs animate-bounce"></i>
+        <p class="font-mono text-[11px] uppercase tracking-widest text-gray-300 font-bold">Palmeiras de Goiás - GO · Av. Humberto Mendonça</p>
+      </div>
+
+      <!-- TÍTULO PRINCIPAL DE ALTO IMPACTO -->
+      <h1 class="font-display font-black uppercase text-4xl sm:text-6xl lg:text-7xl leading-[0.93] mb-5 tracking-tight">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-brand-yellowLight to-brand-yellowDark lightning-glow">Lubrificantes</span>, Peças,<br>
+        Baterias &amp;<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">Oficina Completa.</span>
+      </h1>
+
+      <!-- TEXTO DE APRESENTAÇÃO -->
+      <p class="text-gray-300 text-sm sm:text-base md:text-lg max-w-xl mb-6 leading-relaxed font-normal">
+        Troca de óleo rápida, freios em geral, escapamentos, baterias <strong class="text-brand-yellow font-semibold">Moura &amp; Jet</strong>, manutenção preventiva, lava jato completo e <span class="text-white font-semibold">Plantão Socorro 24 Horas</span> com Ricardson.
+      </p>
+
+      <!-- BOTÃO PRINCIPAL WHATSAPP (RICARDSON) -->
+      <div class="w-full max-w-xl mb-4">
+        <a href="https://api.whatsapp.com/send?phone=5564999629220&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Uni%C3%A3o%20Auto%20Parts%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20pe%C3%A7as%2Fservi%C3%A7os." target="_blank" rel="noopener"
+           class="btn-lightning group w-full flex items-center justify-center gap-2.5 sm:gap-3 font-display font-black uppercase text-base sm:text-lg tracking-wide px-4 sm:px-8 py-3.5 sm:py-4 rounded-xl text-center shadow-lg transition-all">
+          <i class="fa-brands fa-whatsapp text-2xl shrink-0 text-brand-dark"></i>
+          <span class="leading-tight text-center">Falar com Ricardson no WhatsApp</span>
+          <i class="fa-solid fa-arrow-right group-hover:translate-x-1.5 transition-transform text-sm shrink-0 hidden sm:inline-block"></i>
+        </a>
+      </div>
+
+      <!-- ATALHOS RÁPIDOS (3 COLUNAS) -->
+      <div class="grid grid-cols-3 gap-2.5 sm:gap-3 my-4 max-w-xl">
+        <!-- INSTAGRAM (PLACEHOLDER PREPARADO) -->
+        <a href="#" onclick="toast('Nosso Instagram oficial estará disponível em breve!'); return false;" class="card-auto rounded-xl py-3 px-2 flex flex-col items-center gap-1.5 text-center group">
+          <i class="fa-brands fa-instagram text-xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+          <span class="font-mono text-[11px] uppercase tracking-wider text-gray-200 font-bold">Instagram</span>
+        </a>
+        
+        <!-- COMO CHEGAR -->
+        <a href="https://maps.app.goo.gl/iCXWBS5NXq7VDHB27?g_st=ac" target="_blank" rel="noopener" class="card-auto rounded-xl py-3 px-2 flex flex-col items-center gap-1.5 text-center group">
+          <i class="fa-solid fa-diamond-turn-right text-xl text-brand-yellow group-hover:scale-110 transition-transform"></i>
+          <span class="font-mono text-[11px] uppercase tracking-wider text-gray-200 font-bold">Como Chegar</span>
+        </a>
+
+        <!-- CHAVE PIX -->
+        <button onclick="openModal('pix-modal')" class="card-auto rounded-xl py-3 px-2 flex flex-col items-center gap-1.5 text-center group">
+          <i class="fa-solid fa-qrcode text-xl text-brand-pix group-hover:scale-110 transition-transform"></i>
+          <span class="font-mono text-[11px] uppercase tracking-wider text-gray-200 font-bold">Chave PIX</span>
+        </button>
+      </div>
+
+      <!-- AVALIAÇÃO GOOGLE -->
+      <div class="max-w-xl">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJi9OP2IUjXpMRhu19wdXrIF8" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2.5 font-mono text-xs uppercase tracking-wide py-3.5 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-yellow/50 transition-colors shadow-sm">
+          <span class="text-brand-yellow tracking-tighter">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </span>
+          <span class="text-gray-300 font-bold">Avaliar a União Auto Parts no Google</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- COLUNA DIREITA: CARD VISUAL DE SERVIÇOS & PLANTÃO -->
+    <div class="lg:col-span-5">
+      <div class="card-auto rounded-2xl p-6 md:p-7 bg-gradient-to-b from-brand-surface to-brand-surface2 relative overflow-hidden shadow-2xl border border-brand-border">
+        
+        <div class="absolute -right-8 -top-8 w-44 h-44 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- CABEÇALHO DO CARD -->
+        <div class="flex items-center justify-between mb-5 pb-4 border-b border-brand-border">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-brand-surface2 border border-brand-border p-1.5 flex items-center justify-center shadow-inner">
+              <img src="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp" alt="Logo Icon" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <h3 class="font-heading font-black text-white text-base leading-tight">União Auto Parts</h3>
+              <p class="font-mono text-[11px] text-gray-400">Palmeiras de Goiás - GO</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-md bg-brand-yellow/15 text-brand-yellow text-[10px] font-mono font-black uppercase tracking-wider border border-brand-yellow/30">Auto Center</span>
+        </div>
+
+        <!-- LISTA RÁPIDA DE DESTAQUES -->
+        <div class="space-y-3 font-mono text-xs mb-6">
+          <div class="flex items-start gap-3 text-gray-300">
+            <i class="fa-solid fa-oil-can text-brand-yellow mt-0.5 text-sm"></i>
+            <span><strong>Troca de Óleo & Lubrificantes:</strong> sintéticos, semissintéticos e filtros</span>
+          </div>
+          <div class="flex items-start gap-3 text-gray-300">
+            <i class="fa-solid fa-car-battery text-brand-yellow mt-0.5 text-sm"></i>
+            <span><strong>Baterias Linha Pesada e Leve:</strong> Revenda autorizada Moura &amp; Jet</span>
+          </div>
+          <div class="flex items-start gap-3 text-gray-300">
+            <i class="fa-solid fa-gears text-brand-yellow mt-0.5 text-sm"></i>
+            <span><strong>Mecânica Rápida:</strong> freios, escapamentos e suspensão preventiva</span>
+          </div>
+          <div class="flex items-start gap-3 text-gray-300">
+            <i class="fa-solid fa-soap text-blue-400 mt-0.5 text-sm"></i>
+            <span><strong>Lava Jato & Higienização:</strong> completa, engraxamento e empresas</span>
+          </div>
+          <div class="flex items-start gap-3 text-brand-red bg-brand-red/10 p-2.5 rounded-lg border border-brand-red/30">
+            <i class="fa-solid fa-truck-ramp-box text-brand-red mt-0.5 text-sm"></i>
+            <span><strong>Plantão 24h Socorro:</strong> atendimento de emergência na cidade e região</span>
+          </div>
+        </div>
+
+        <!-- CONTATO DIRETO RICARDSON -->
+        <div class="p-3.5 rounded-xl bg-brand-dark/80 border border-brand-border flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-whatsapp/20 flex items-center justify-center text-brand-whatsapp text-lg">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] text-gray-400 uppercase tracking-wider">Atendimento & Socorro</p>
+              <p class="font-mono text-sm font-bold text-white">(64) 99962-9220</p>
+            </div>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=5564999629220" target="_blank" rel="noopener" class="text-xs font-mono text-brand-yellow hover:underline font-bold px-2 py-1 bg-brand-surface2 rounded border border-brand-border">Chamar</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEPARADOR -->
+<div class="max-w-7xl mx-auto px-4 md:px-8"><div class="border-t border-brand-border/60"></div></div>
+
+<!-- CARROSSEL DE MARCAS DE LUBRIFICANTES E PEÇAS (INTEGRAÇÃO COMPLETA PEREIRA -> UNIÃO AUTO PARTS) -->
+<section id="marcas" class="py-12 md:py-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
+  <div class="mb-6 max-w-xl">
+    <span class="text-xs font-mono uppercase tracking-widest text-brand-yellow font-bold mb-1 block">// PROCEDÊNCIA E QUALIDADE</span>
+    <h2 class="font-display font-black uppercase text-3xl md:text-4xl text-white">Marcas Homologadas</h2>
+    <p class="text-gray-400 text-xs sm:text-sm mt-1">Trabalhamos com os melhores lubrificantes, aditivos e filtros automotivos do mundo.</p>
+  </div>
+
+  <div class="relative w-full">
+    <div class="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-[#08090C] to-transparent z-10 pointer-events-none"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-[#08090C] to-transparent z-10 pointer-events-none"></div>
+    
+    <div id="marcasCarousel" class="carousel-track py-2">
+      <!-- Gerado dinamicamente com as 22 marcas oficiais com cartões contrastantes -->
+    </div>
+  </div>
+</section>
+
+<!-- SEPARADOR -->
+<div class="max-w-7xl mx-auto px-4 md:px-8"><div class="border-t border-brand-border/60"></div></div>
+
+<!-- SERVIÇOS & DEPARTAMENTOS -->
+<section id="servicos" class="py-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
+  <div class="mb-10 max-w-xl">
+    <span class="text-xs font-mono uppercase tracking-widest text-brand-yellow font-bold mb-2 block">Nossos Serviços</span>
+    <h2 class="font-display font-black uppercase text-4xl md:text-5xl text-white">Soluções Automotivas</h2>
+    <p class="text-gray-400 text-sm mt-2">Manutenção preventiva e corretiva com tecnologia, peças originais e atendimento ágil.</p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    
+    <!-- 1. TROCA DE ÓLEO & LUBRIFICANTES -->
+    <div class="card-auto rounded-2xl p-6 hover:border-brand-yellow/50 transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center mb-5 text-brand-yellow text-2xl">
+        <i class="fa-solid fa-oil-can"></i>
+      </div>
+      <h3 class="font-display font-black uppercase text-2xl mb-2 text-white">Troca de Óleo &amp; Filtros</h3>
+      <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3">Linha completa de óleos sintéticos, semissintéticos e minerais para motores nacionais e importados. Substituição de filtros de óleo, ar, combustível e cabine.</p>
+      <span class="text-[11px] font-mono text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-solid fa-check text-[10px]"></i> Shell, Mobil, Castrol, Havoline</span>
+    </div>
+
+    <!-- 2. BATERIAS AUTOMOTIVAS -->
+    <div class="card-auto rounded-2xl p-6 hover:border-brand-yellow/50 transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center mb-5 text-brand-yellow text-2xl">
+        <i class="fa-solid fa-car-battery"></i>
+      </div>
+      <h3 class="font-display font-black uppercase text-2xl mb-2 text-white">Baterias Moura &amp; Jet</h3>
+      <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3">Venda, teste e instalação com garantia para carros, camionetes, motos e utilitários. Diagnóstico computadorizado do sistema elétrico e alternador.</p>
+      <span class="text-[11px] font-mono text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-solid fa-bolt text-[10px]"></i> Instalação e Teste Gratuito</span>
+    </div>
+
+    <!-- 3. FREIOS & SUSPENSÃO -->
+    <div class="card-auto rounded-2xl p-6 hover:border-brand-yellow/50 transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center mb-5 text-brand-yellow text-2xl">
+        <i class="fa-solid fa-circle-dot"></i>
+      </div>
+      <h3 class="font-display font-black uppercase text-2xl mb-2 text-white">Freios em Geral</h3>
+      <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3">Revisão completa do sistema de frenagem: pastilhas, discos, tambores, lonas, sangria e substituição de fluidos DOT3 e DOT4 de alta performance.</p>
+      <span class="text-[11px] font-mono text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-[10px]"></i> Máxima Segurança na Frenagem</span>
+    </div>
+
+    <!-- 4. ESCAPAMENTOS -->
+    <div class="card-auto rounded-2xl p-6 hover:border-brand-yellow/50 transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center mb-5 text-brand-yellow text-2xl">
+        <i class="fa-solid fa-smog"></i>
+      </div>
+      <h3 class="font-display font-black uppercase text-2xl mb-2 text-white">Escapamentos &amp; Soldas</h3>
+      <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3">Troca e reparo de silenciosos intermediários, traseiros, catalisadores, tubos flexíveis, abraçadeiras e coxins para redução de ruídos e emissões.</p>
+      <span class="text-[11px] font-mono text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-solid fa-wrench text-[10px]"></i> Peças com Encaixe Perfeito</span>
+    </div>
+
+    <!-- 5. MANUTENÇÃO PREVENTIVA -->
+    <div class="card-auto rounded-2xl p-6 hover:border-brand-yellow/50 transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center mb-5 text-brand-yellow text-2xl">
+        <i class="fa-solid fa-toolbox"></i>
+      </div>
+      <h3 class="font-display font-black uppercase text-2xl mb-2 text-white">Manutenção Preventiva</h3>
+      <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3">Checagem de correias, velas, cabos, aditivo de arrefecimento do radiador, água desmineralizada e fluidos para evitar quebras e gastos excessivos.</p>
+      <span class="text-[11px] font-mono text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-solid fa-gauge-high text-[10px]"></i> Maior Vida Útil do Motor</span>
+    </div>
+
+    <!-- 6. PLANTÃO 24H SOCORRO -->
+    <div class="card-auto rounded-2xl p-6 border-brand-red/40 bg-gradient-to-b from-brand-surface to-[#1f1013] hover:border-brand-red transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-brand-red/15 border border-brand-red/30 flex items-center justify-center mb-5 text-brand-red text-2xl animate-pulse">
+        <i class="fa-solid fa-truck-medical"></i>
+      </div>
+      <h3 class="font-display font-black uppercase text-2xl mb-2 text-white flex items-center justify-between">
+        <span>Plantão Socorro 24h</span>
+        <span class="text-[10px] font-mono bg-brand-red text-white px-2 py-0.5 rounded font-bold">24 HORAS</span>
+      </h3>
+      <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-3">Problemas com bateria arriada, falta de lubrificação ou pane emergencial? Acione nosso socorro a qualquer hora do dia ou da noite.</p>
+      <a href="https://api.whatsapp.com/send?phone=5564999629220&text=PRECISO%20DE%20SOCORRO%2024H%20MEC%C3%82NICO%20OU%20BATERIA!" target="_blank" rel="noopener" class="text-[11px] font-mono text-brand-red hover:underline font-bold uppercase tracking-wider flex items-center gap-1.5">
+        <i class="fa-solid fa-phone"></i> Ligar / Acionar Socorro Agora
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEPARADOR -->
+<div class="max-w-7xl mx-auto px-4 md:px-8"><div class="border-t border-brand-border/60"></div></div>
+
+<!-- SEÇÃO ESPECIAL: LAVA JATO & HIGIENIZAÇÃO -->
+<section id="lavajato" class="py-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
+  <div class="card-auto rounded-3xl p-6 md:p-10 bg-gradient-to-br from-brand-surface via-brand-surface2 to-[#0c1424] border border-blue-900/40 relative overflow-hidden">
+    
+    <div class="grid lg:grid-cols-12 gap-8 items-center">
+      
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-[11px] font-mono font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-spray-can-sparkles"></i> Lava Jato Especializado
+        </div>
+
+        <h2 class="font-display font-black uppercase text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
+          Lavagem Completa, Higienização &amp; Engraxamento
+        </h2>
+
+        <p class="text-gray-300 text-sm leading-relaxed font-sans">
+          Cuidado estético e conservação do chassi para o seu veículo rodar limpo e protegido. Atendemos veículos de passeio, camionetes, frotas comerciais e veículos pesados.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-3 pt-2 font-mono text-xs text-gray-200">
+          <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-brand-dark/70 border border-brand-border">
+            <i class="fa-solid fa-check text-brand-yellow"></i>
+            <span>Lavagem Completa &amp; Chassi</span>
+          </div>
+          <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-brand-dark/70 border border-brand-border">
+            <i class="fa-solid fa-check text-brand-yellow"></i>
+            <span>Higienização Interna Detalhada</span>
+          </div>
+          <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-brand-dark/70 border border-brand-border">
+            <i class="fa-solid fa-check text-brand-yellow"></i>
+            <span>Engraxamento Profissional</span>
+          </div>
+          <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-brand-dark/70 border border-brand-border">
+            <i class="fa-solid fa-briefcase text-brand-yellow"></i>
+            <span>Convênios para Empresas &amp; Frotas</span>
+          </div>
+        </div>
+
+        <div class="pt-4">
+          <a href="https://api.whatsapp.com/send?phone=5564999629220&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Lava%20Jato%20da%20Uni%C3%A3o%20Auto%20Parts." target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-display font-black uppercase tracking-wider text-sm transition-all shadow-lg">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Agendar Lavagem / Frotas
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-sm rounded-2xl overflow-hidden border-2 border-brand-border shadow-2xl bg-brand-dark p-6 text-center space-y-4">
+          <div class="w-16 h-16 rounded-2xl bg-blue-500/10 text-blue-400 border border-blue-500/30 flex items-center justify-center text-3xl mx-auto">
+            <i class="fa-solid fa-shower"></i>
+          </div>
+          <h3 class="font-heading font-black text-white text-lg uppercase tracking-wide">Convênios Empresariais</h3>
+          <p class="text-xs text-gray-400 font-sans leading-relaxed">
+            Sua empresa possui frota de carros ou utilitários? Fale com a <strong>União Auto Parts</strong> e tenha condições especiais de faturamento e agendamento prioritário.
+          </p>
+          <div class="p-3 bg-brand-surface2 rounded-xl border border-brand-border text-[11px] font-mono text-brand-yellow font-bold">
+            📍 Atendimento no Bairro São José
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SEPARADOR -->
+<div class="max-w-7xl mx-auto px-4 md:px-8"><div class="border-t border-brand-border/60"></div></div>
+
+<!-- HORÁRIOS & LOCALIZAÇÃO -->
+<section id="horarios" class="py-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
+  <div class="mb-10 max-w-xl">
+    <span class="text-xs font-mono uppercase tracking-widest text-brand-yellow font-bold mb-2 block">Atendimento</span>
+    <h2 class="font-display font-black uppercase text-4xl md:text-5xl text-white">Horários &amp; Localização</h2>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-8 items-stretch" id="localizacao">
+    
+    <!-- TABELA DE HORÁRIOS E ENDEREÇO -->
+    <div class="card-auto rounded-2xl p-6 md:p-8 flex flex-col justify-between">
+      <div>
+        <h3 class="font-heading font-black text-lg text-white mb-4 flex items-center gap-2">
+          <i class="fa-regular fa-clock text-brand-yellow"></i> Horário de Atendimento
+        </h3>
+        
+        <table class="w-full text-sm font-mono mb-6">
+          <tbody class="text-gray-300">
+            <tr id="row-wkd" class="border-b border-brand-border transition-colors">
+              <td class="py-3 text-gray-400">Segunda a Sexta</td>
+              <td class="py-3 text-right font-bold text-white">07:00 – 18:00</td>
+            </tr>
+            <tr id="row-sat" class="border-b border-brand-border transition-colors">
+              <td class="py-3 text-gray-400">Sábado</td>
+              <td class="py-3 text-right font-bold text-white">07:00 – 12:00</td>
+            </tr>
+            <tr id="row-sun" class="border-b border-brand-border transition-colors">
+              <td class="py-3 text-gray-400">Domingo</td>
+              <td class="py-3 text-right font-bold text-rose-400">Fechado</td>
+            </tr>
+            <tr class="bg-brand-red/10 text-brand-red">
+              <td class="py-3 pl-2 font-bold flex items-center gap-1.5"><i class="fa-solid fa-truck-medical"></i> Socorro Emergencial</td>
+              <td class="py-3 pr-2 text-right font-black">Plantão 24 Horas</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="flex items-start gap-3.5 p-4 rounded-xl bg-brand-surface2 border border-brand-border mb-6">
+          <i class="fa-solid fa-location-dot text-brand-yellow text-lg mt-0.5"></i>
+          <div class="text-xs text-gray-300 leading-relaxed font-mono">
+            <strong class="text-white block text-sm mb-1">Endereço da Loja:</strong>
+            Av. Humberto Mendonça, Qd. 35, Lt. 13<br>
+            Bairro São José<br>
+            Palmeiras de Goiás — Goiás, CEP: 76190-000
+          </div>
+        </div>
+      </div>
+
+      <a href="https://maps.app.goo.gl/iCXWBS5NXq7VDHB27?g_st=ac" target="_blank" rel="noopener"
+         class="btn-lightning flex items-center justify-center gap-2 font-display font-black uppercase tracking-wide py-3.5 rounded-xl text-base">
+        <i class="fa-solid fa-diamond-turn-right"></i> Traçar Rota no Google Maps
+      </a>
+    </div>
+
+    <!-- MAPA SATÉLITE DA UNIÃO AUTO PARTS -->
+    <div class="card-auto rounded-2xl overflow-hidden min-h-[340px] flex border border-brand-border">
+      <iframe
+        title="Localização União Auto Parts Palmeiras de Goiás"
+        class="w-full h-full min-h-[340px]"
+        style="border:0; filter:contrast(1.08) brightness(0.92);"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Uni%C3%A3o+Auto+Parts,+Avenida+Humberto+Mendon%C3%A7a,+Palmeiras+de+Goi%C3%A1s+-+GO&t=k&z=17&output=embed">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-brand-border mt-8 px-4 md:px-8 py-10 bg-[#060709]">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+      
+      <div class="flex items-center gap-3">
+        <img src="https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp" alt="União Auto Parts" class="h-10 sm:h-12 object-contain">
+        <div>
+          <p class="font-heading font-black uppercase text-lg leading-none text-white">UNIÃO AUTO PARTS</p>
+          <p class="font-mono text-[10px] uppercase tracking-widest text-gray-400 mt-1">Lubrificantes • Peças • Baterias • Escapamentos • Freios • Lava Jato</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#" onclick="toast('Instagram oficial em breve!'); return false;" class="w-10 h-10 rounded-full border border-brand-border bg-brand-surface flex items-center justify-center hover:border-brand-yellow text-gray-300 hover:text-brand-yellow transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5564999629220" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-brand-border bg-brand-surface flex items-center justify-center hover:border-brand-whatsapp text-gray-300 hover:text-brand-whatsapp transition-colors" title="WhatsApp Ricardson"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://maps.app.goo.gl/iCXWBS5NXq7VDHB27?g_st=ac" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-brand-border bg-brand-surface flex items-center justify-center hover:border-brand-yellow text-gray-300 hover:text-brand-yellow transition-colors" title="Como Chegar"><i class="fa-solid fa-location-dot"></i></a>
+      </div>
+
+    </div>
+
+    <div class="border-t border-brand-border/60 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left text-xs font-mono text-gray-400">
+      <p>&copy; <span id="year"></span> UNIÃO AUTO PARTS — Todos os direitos reservados.</p>
+      <p>Desenvolvido por João Vitor S N • <a href="https://jovidigital.vercel.app/" target="_blank" rel="noopener" class="text-gray-300 hover:text-brand-yellow transition-colors font-bold">Crie seu site aqui</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL: PIX BR CODE OFICIAL (COM CRC16) ================= -->
+<div id="pix-modal" class="modal-backdrop" onclick="closeOnBackdrop(event,'pix-modal')">
+  <div class="modal-panel">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-brand-border">
+      <h3 class="font-display font-bold uppercase text-xl flex items-center gap-2"><i class="fa-solid fa-qrcode text-brand-pix"></i> Pagar com PIX</h3>
+      <button onclick="closeModal('pix-modal')" class="w-8 h-8 rounded-full border border-brand-border flex items-center justify-center hover:border-brand-yellow"><i class="fa-solid fa-xmark text-sm"></i></button>
+    </div>
+
+    <div class="p-6">
+      <div class="card-auto rounded-xl p-4 mb-4 font-mono text-xs space-y-2">
+        <div class="flex justify-between"><span class="text-gray-400">Beneficiário</span><span class="text-right font-bold text-white">Uniao Auto Parts</span></div>
+        <div class="flex justify-between"><span class="text-gray-400">Instituição</span><span class="text-right text-gray-200">Coop. Crédito Sudoeste Goiano</span></div>
+        <div class="flex justify-between items-center pt-1 border-t border-brand-border"><span class="text-gray-400">Chave CNPJ</span><span class="font-bold text-brand-yellow text-sm">26.902.510/0001-48</span></div>
+      </div>
+
+      <button onclick="copiarChavePix()" id="btn-copiar-chave" class="w-full flex items-center justify-center gap-2 font-mono text-xs uppercase tracking-wide py-3.5 rounded-xl mb-5 font-bold shadow-md" style="background:#32BCAD; color:#042421;">
+        <i class="fa-regular fa-copy text-base"></i> Copiar Chave CNPJ sem Valor
+      </button>
+
+      <div class="border-t border-brand-border pt-5">
+        <label class="font-mono text-[11px] uppercase tracking-widest text-gray-400 mb-2 block">Inserir Valor a Pagar (Opcional)</label>
+        <div class="flex gap-2">
+          <div class="flex-1 flex items-center card-auto rounded-xl px-3">
+            <span class="text-gray-400 font-mono mr-1 text-sm">R$</span>
+            <input id="pix-valor" type="number" min="0" step="0.01" placeholder="150.00" class="w-full bg-transparent py-2.5 font-mono outline-none text-white text-sm">
+          </div>
+          <button onclick="gerarPix()" class="btn-lightning px-5 rounded-xl font-mono text-xs font-bold uppercase tracking-wide">Gerar</button>
+        </div>
+
+        <div id="pix-qr-area" class="hidden mt-6 text-center">
+          <div id="pix-qrcode" class="flex justify-center bg-white p-3 rounded-2xl inline-block mx-auto shadow-xl"></div>
+          <p class="font-mono text-[10px] uppercase tracking-widest text-gray-400 mt-4 mb-2">Código PIX Copia e Cola</p>
+          <div class="card-auto rounded-xl p-3 text-left">
+            <p id="pix-copia-cola" class="font-mono text-[10px] text-gray-300 break-all leading-relaxed max-h-20 overflow-y-auto"></p>
+          </div>
+          <button onclick="copiarPixCopiaCola()" class="w-full mt-3 flex items-center justify-center gap-2 font-mono text-xs uppercase tracking-wide py-3.5 rounded-xl border border-brand-border hover:border-brand-yellow text-brand-yellow font-bold">
+            <i class="fa-regular fa-copy"></i> Copiar Código PIX
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL: COMPARTILHAR / PWA ================= -->
+<div id="share-modal" class="modal-backdrop" onclick="closeOnBackdrop(event,'share-modal')">
+  <div class="modal-panel">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-brand-border">
+      <h3 class="font-display font-bold uppercase text-xl flex items-center gap-2"><i class="fa-solid fa-share-nodes text-brand-yellow"></i> Compartilhar &amp; App</h3>
+      <button onclick="closeModal('share-modal')" class="w-8 h-8 rounded-full border border-brand-border flex items-center justify-center hover:border-brand-yellow"><i class="fa-solid fa-xmark text-sm"></i></button>
+    </div>
+
+    <div class="p-4 space-y-1">
+      <!-- 1. Compartilhar Celular -->
+      <button onclick="compartilharNativo()" class="w-full flex items-center gap-4 px-4 py-3.5 rounded-xl hover:bg-white/5 transition-colors text-left">
+        <i class="fa-solid fa-mobile-screen-button text-brand-yellow w-5 text-center text-lg"></i>
+        <div>
+          <span class="text-sm block text-white font-semibold">Compartilhar no Celular</span>
+          <span class="text-[10px] text-gray-400 font-mono">Envia link e dados da loja</span>
+        </div>
+      </button>
+
+      <!-- 2. WhatsApp -->
+      <a id="wa-share-btn" href="#" target="_blank" rel="noopener" class="w-full flex items-center gap-4 px-4 py-3.5 rounded-xl hover:bg-white/5 transition-colors">
+        <i class="fa-brands fa-whatsapp w-5 text-center text-brand-whatsapp text-xl"></i>
+        <div>
+          <span class="text-sm block text-white font-semibold">Enviar no WhatsApp</span>
+          <span class="text-[10px] text-gray-400 font-mono">Mensagem rápida para contatos</span>
+        </div>
+      </a>
+
+      <!-- 3. Whats Direct -->
+      <button onclick="toggleAccordion('acc-whats-direct')" class="w-full flex items-center justify-between gap-4 px-4 py-3.5 rounded-xl hover:bg-white/5 transition-colors text-left">
+        <span class="flex items-center gap-4"><i class="fa-solid fa-comment-sms w-5 text-center text-brand-yellow"></i><span class="text-sm font-semibold">Whats Direct (sem salvar número)</span></span>
+        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <div id="acc-whats-direct" class="accordion-body px-4">
+        <div class="pb-3 flex gap-2">
+          <input id="wd-ddd" type="tel" maxlength="2" placeholder="DDD" class="w-16 card-auto rounded-xl px-3 py-2 text-xs font-mono text-center outline-none text-white">
+          <input id="wd-numero" type="tel" maxlength="9" placeholder="Número" class="flex-1 card-auto rounded-xl px-3 py-2 text-xs font-mono outline-none text-white">
+          <button onclick="whatsDirect()" class="px-4 rounded-xl text-xs font-mono bg-brand-whatsapp text-black font-bold"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+      <!-- 4. QR Code Site -->
+      <button onclick="toggleAccordion('acc-qr-site')" class="w-full flex items-center justify-between gap-4 px-4 py-3.5 rounded-xl hover:bg-white/5 transition-colors text-left">
+        <span class="flex items-center gap-4"><i class="fa-solid fa-qrcode w-5 text-center text-brand-yellow"></i><span class="text-sm font-semibold">QR Code do Site</span></span>
+        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <div id="acc-qr-site" class="accordion-body px-4">
+        <div class="pb-3 flex justify-center">
+          <div id="site-qrcode" class="bg-white p-3 rounded-xl shadow-lg"></div>
+        </div>
+      </div>
+
+      <!-- 5. Instalar App Android -->
+      <button onclick="instalarPWA()" class="w-full flex items-center justify-between gap-4 px-4 py-3.5 rounded-xl bg-brand-yellow/10 hover:bg-brand-yellow/15 transition-colors text-left border border-brand-yellow/30 my-1">
+        <span class="flex items-center gap-4">
+          <i class="fa-brands fa-android text-brand-yellow text-xl w-5 text-center"></i>
+          <div>
+            <span class="text-sm font-bold block text-white">Instalar Aplicativo (Android)</span>
+            <span class="text-[10px] text-gray-400 font-mono">Adicionar atalho à tela inicial</span>
+          </div>
+        </span>
+        <i class="fa-solid fa-arrow-down-to-bracket text-brand-yellow text-sm"></i>
+      </button>
+
+      <!-- 6. iOS Instruções -->
+      <button onclick="toggleAccordion('acc-ios')" class="w-full flex items-center justify-between gap-4 px-4 py-3.5 rounded-xl hover:bg-white/5 transition-colors text-left">
+        <span class="flex items-center gap-4">
+          <i class="fa-brands fa-apple w-5 text-center text-brand-yellow text-xl"></i>
+          <div>
+            <span class="text-sm block font-semibold">Instruções para iPhone (iOS)</span>
+            <span class="text-[10px] text-gray-400 font-mono">Como adicionar à tela de início</span>
+          </div>
+        </span>
+        <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <div id="acc-ios" class="accordion-body px-4">
+        <div class="p-3 bg-black/60 rounded-xl border border-brand-border mb-2">
+          <ol class="text-xs text-gray-300 space-y-1.5 font-mono leading-relaxed list-decimal list-inside">
+            <li>Abra este site no <strong>Safari</strong></li>
+            <li>Toque no botão <strong>Compartilhar ( <i class="fa-solid fa-arrow-up-from-bracket text-brand-yellow"></i> )</strong></li>
+            <li>Role e toque em <strong>"Adicionar à Tela de Início"</strong></li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 7. Copiar Link -->
+      <div class="border-t border-brand-border mt-2 pt-2">
+        <button onclick="copiarLink()" class="w-full flex items-center gap-4 px-4 py-3.5 rounded-xl hover:bg-white/5 transition-colors text-left font-semibold">
+          <i class="fa-solid fa-link w-5 text-center text-brand-yellow"></i>
+          <span class="text-sm">Copiar Mensagem e Link</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TOAST ================= -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[99999] px-5 py-3 rounded-full bg-brand-yellow text-black font-mono text-xs uppercase tracking-wide font-black opacity-0 pointer-events-none transition-opacity duration-300 shadow-2xl"></div>
+
+<!-- ================= FLOATING WHATSAPP FAB ================= -->
+<a id="wa-fab" href="https://api.whatsapp.com/send?phone=5564999629220&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Uni%C3%A3o%20Auto%20Parts%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"
+   class="fab-shift fixed bottom-6 right-5 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl"
+   style="background:#25D366; box-shadow:0 6px 24px rgba(37,211,102,.45);">
+  <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+</a>
+
+<!-- ================= JAVASCRIPT OTIMIZADO ================= -->
+<script>
+/* =========================================================
+   CONFIGURAÇÕES GERAIS DA UNIÃO AUTO PARTS
+========================================================= */
+const LOGO_URL = 'https://raw.githubusercontent.com/joaovitorsouzadi/uniaoautopartsfiles/main/logo.webp';
+const WA_PHONE = '5564999629220';
+const PIX_CNPJ = '26902510000148';
+
+/* MARCAS OFICIAIS DE LUBRIFICANTES E PEÇAS (22 MARCAS DO REPOSITÓRIO AUTOMOTIVO) */
+const MARCAS = [
+  { nome: 'Shell', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png' },
+  { nome: 'Mobil', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png' },
+  { nome: 'Texaco / Havoline', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png' },
+  { nome: 'Castrol', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/castrol.png' },
+  { nome: 'Motorcraft', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorcraft.svg' },
+  { nome: 'Lubrax', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/lubrax.png' },
+  { nome: 'GT-Oil', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/gtoil.png' },
+  { nome: 'Maxi Performance', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/maxiperformance.png' },
+  { nome: 'Evora', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/evora.png' },
+  { nome: 'Radnaq', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/radnaq.png' },
+  { nome: 'Motorfix', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorfix.png' },
+  { nome: 'Black Brasil', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/blackbrasil.webp' },
+  { nome: 'Tirreno', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tirreno.png' },
+  { nome: 'Speed', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/speed.png' },
+  { nome: 'Wurth', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wurth.webp' },
+  { nome: 'Tekbond', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tekbond.png' },
+  { nome: 'Tecfil', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tecfil.png' },
+  { nome: 'Mann-Filter', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mannfilter.png' },
+  { nome: 'Wega', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wega.png' },
+  { nome: 'Japanparts', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/japanparts.png' },
+  { nome: 'Bosch', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/bosch.svg' },
+  { nome: 'Mahle', img: 'https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mahle.png' }
+];
+
+/* =========================================================
+   SPLASH SCREEN
+========================================================= */
+(function(){
+  let p = 0;
+  const fill = document.getElementById('splash-fill');
+  const count = document.getElementById('splash-count');
+  const timer = setInterval(()=>{
+    p += Math.random()*22 + 12;
+    if(p >= 100){ p = 100; clearInterval(timer); }
+    fill.style.width = p + '%';
+    count.textContent = Math.floor(p) + '%';
+    if(p === 100){
+      setTimeout(()=>{ document.getElementById('splash').classList.add('hide'); }, 200);
+    }
+  }, 90);
+})();
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+window.addEventListener('scroll', ()=>{
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  document.getElementById('progress-bar').style.width = scrolled + '%';
+});
+
+/* =========================================================
+   BARRA DE STATUS DINÂMICA (UNIÃO AUTO PARTS)
+   Seg a Sex: 07:00 as 18:00 (420 a 1080 min)
+   Sábado: 07:00 as 12:00 (420 a 720 min)
+   Domingo: Fechado (com Plantão 24h)
+========================================================= */
+const HORARIOS = {
+  1: { inicio: 420, fim: 1080, label: "07:00 às 18:00", dia: "Segunda" },
+  2: { inicio: 420, fim: 1080, label: "07:00 às 18:00", dia: "Terça" },
+  3: { inicio: 420, fim: 1080, label: "07:00 às 18:00", dia: "Quarta" },
+  4: { inicio: 420, fim: 1080, label: "07:00 às 18:00", dia: "Quinta" },
+  5: { inicio: 420, fim: 1080, label: "07:00 às 18:00", dia: "Sexta" },
+  6: { inicio: 420, fim: 720,  label: "07:00 às 12:00", dia: "Sábado" },
+  0: { inicio: 0,   fim: 0,    label: "Fechado", dia: "Domingo" }
+};
+
+function agoraSaoPaulo(){
+  return new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+}
+
+function atualizarStatusLoja(){
+  const agora = agoraSaoPaulo();
+  const dia = agora.getDay();
+  const minAgora = agora.getHours() * 60 + agora.getMinutes();
+
+  const hHoje = HORARIOS[dia];
+  const estaAberto = (dia !== 0 && minAgora >= hHoje.inicio && minAgora < hHoje.fim);
+
+  const dot = document.getElementById('bar-dot');
+  const badge = document.getElementById('bar-status-badge');
+  const text = document.getElementById('bar-status-text');
+
+  ['row-wkd','row-sat','row-sun'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.classList.remove('bg-brand-yellow/15', 'text-brand-yellow');
+  });
+  if(dia >= 1 && dia <= 5) document.getElementById('row-wkd')?.classList.add('bg-brand-yellow/15');
+  else if(dia === 6) document.getElementById('row-sat')?.classList.add('bg-brand-yellow/15');
+  else if(dia === 0) document.getElementById('row-sun')?.classList.add('bg-brand-yellow/15');
+
+  if(estaAberto){
+    dot.className = 'live-dot on shrink-0';
+    badge.textContent = 'ABERTO AGORA';
+    badge.className = 'font-bold text-[11px] uppercase tracking-wider shrink-0 text-brand-whatsapp';
+    const horaFecha = hHoje.label.split('às')[1].trim();
+    text.textContent = `Atendimento até às ${horaFecha} (Plantão 24h ativo)`;
+  } else {
+    dot.className = 'live-dot off shrink-0';
+    badge.textContent = 'LOJA FECHADA';
+    badge.className = 'font-bold text-[11px] uppercase tracking-wider shrink-0 text-rose-400';
+
+    if(dia !== 0 && minAgora < hHoje.inicio){
+      text.textContent = `Abrimos hoje às 07:00 • Socorro 24h ativo`;
+    } else {
+      const proxDiaTexto = (dia === 6 ? 'Segunda-feira às 07:00' : 'Amanhã às 07:00');
+      text.textContent = `Abrimos ${proxDiaTexto} • Socorro 24h ativo`;
+    }
+  }
+}
+atualizarStatusLoja();
+setInterval(atualizarStatusLoja, 30000);
+
+/* =========================================================
+   CARROSSEL DE MARCAS AUTOMÁTICO COM INÉRCIA E ARRASTE
+========================================================= */
+(function(){
+  const track = document.getElementById('marcasCarousel');
+  
+  // Duplicamos as marcas para garantir loop suave
+  const listaDuplicada = [...MARCAS, ...MARCAS];
+
+  listaDuplicada.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'carousel-item h-16 px-6 py-2 rounded-2xl bg-[#13161D] border border-brand-border shadow-sm flex items-center justify-center shrink-0 hover:border-brand-yellow/50 transition-colors';
+    card.innerHTML = `
+      <img src="${item.img}" alt="${item.nome}" loading="lazy" class="h-9 max-w-[120px] object-contain pointer-events-none filter drop-shadow">
+    `;
+    track.appendChild(card);
+  });
+
+  let isPaused = false;
+  let isDown = false;
+  let hasDragged = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+
+  function autoScrollStep(){
+    if(!isPaused && !isDown){
+      track.scrollLeft += 1.1;
+      if(track.scrollLeft >= (track.scrollWidth - track.clientWidth - 2)){
+        track.scrollLeft = 0;
+      }
+    }
+    requestAnimationFrame(autoScrollStep);
+  }
+  requestAnimationFrame(autoScrollStep);
+
+  track.addEventListener('touchstart', (e)=>{
+    isPaused = true;
+    isDown = true;
+    hasDragged = false;
+    startX = e.touches[0].pageX - track.offsetLeft;
+    scrollLeftStart = track.scrollLeft;
+  }, { passive: true });
+
+  track.addEventListener('touchmove', (e)=>{
+    if(!isDown) return;
+    const x = e.touches[0].pageX - track.offsetLeft;
+    const walk = (x - startX);
+    if(Math.abs(walk) > 4) hasDragged = true;
+    track.scrollLeft = scrollLeftStart - walk;
+  }, { passive: true });
+
+  ['touchend', 'touchcancel'].forEach(ev => {
+    track.addEventListener(ev, ()=>{
+      isDown = false;
+      setTimeout(()=> { isPaused = false; }, 900);
+    });
+  });
+
+  track.addEventListener('mouseenter', ()=> { isPaused = true; });
+  track.addEventListener('mouseleave', ()=> {
+    if(!isDown) isPaused = false;
+    isDown = false;
+    track.classList.remove('dragging');
+  });
+
+  track.addEventListener('mousedown', (e)=>{
+    isDown = true;
+    isPaused = true;
+    hasDragged = false;
+    track.classList.add('dragging');
+    startX = e.pageX - track.offsetLeft;
+    scrollLeftStart = track.scrollLeft;
+  });
+
+  track.addEventListener('mousemove', (e)=>{
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.3;
+    if(Math.abs(walk) > 4) hasDragged = true;
+    track.scrollLeft = scrollLeftStart - walk;
+  });
+
+  track.addEventListener('mouseup', ()=>{
+    isDown = false;
+    track.classList.remove('dragging');
+    setTimeout(()=> { isPaused = false; }, 900);
+  });
+})();
+
+/* =========================================================
+   PAYLOAD DE COMPARTILHAMENTO
+========================================================= */
+function getSharePayload(){
+  const url = window.location.href;
+  const text = `⚡ *UNIÃO AUTO PARTS* — Peças, Lubrificantes, Baterias e Oficina 🚗\n📍 Av. Humberto Mendonça, Qd. 35, Lt. 13 - São José, Palmeiras de Goiás - GO\n\nConfira nossos serviços, localização e contato oficial no site:\n${url}`;
+  return { title: 'União Auto Parts | Peças, Lubrificantes e Oficina', text: text, url: url };
+}
+
+/* =========================================================
+   MODAIS
+========================================================= */
+function openModal(id){
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if(id === 'share-modal'){
+    document.getElementById('site-qrcode').innerHTML = '';
+    new QRCode(document.getElementById('site-qrcode'), { text: window.location.href, width: 150, height: 150, colorDark: '#08090C', colorLight: '#ffffff' });
+    
+    const payload = getSharePayload();
+    document.getElementById('wa-share-btn').href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(payload.text);
+  }
+}
+function closeModal(id){
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeOnBackdrop(e, id){
+  if(e.target.id === id) closeModal(id);
+}
+function toggleAccordion(id){
+  document.getElementById(id).classList.toggle('open');
+}
+
+/* =========================================================
+   TOAST
+========================================================= */
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(()=>{ t.style.opacity = '0'; }, 2500);
+}
+
+/* =========================================================
+   PIX EMV / BR CODE (CRC16 CCITT)
+========================================================= */
+function crc16(payload){
+  let poly = 0x1021, res = 0xFFFF;
+  for(let i = 0; i < payload.length; i++){
+    res ^= (payload.charCodeAt(i) << 8);
+    for(let j = 0; j < 8; j++){
+      res = (res & 0x8000) ? ((res << 1) ^ poly) & 0xFFFF : (res << 1) & 0xFFFF;
+    }
+  }
+  return res.toString(16).toUpperCase().padStart(4, '0');
+}
+function tlv(id, value){
+  const len = String(value.length).padStart(2, '0');
+  return id + len + value;
+}
+function montarPayloadPix(valor){
+  const chave = PIX_CNPJ;
+  const nome = 'UNIAO AUTO PARTS';
+  const cidade = 'PALMEIRAS DE GOIAS';
+
+  let conta = tlv('00', 'BR.GOV.BCB.PIX') + tlv('01', chave);
+  conta = tlv('26', conta);
+
+  let adicional = tlv('62', tlv('05', '***'));
+
+  let payload = tlv('00', '01') + tlv('01', '11') + conta + tlv('52', '0000') + tlv('53', '986');
+  if(valor && parseFloat(valor) > 0){
+    payload += tlv('54', parseFloat(valor).toFixed(2));
+  }
+  payload += tlv('58', 'BR') + tlv('59', nome) + tlv('60', cidade) + adicional;
+  payload += '6304';
+  payload += crc16(payload);
+  return payload;
+}
+
+function copiarChavePix(){
+  copiarTexto('26.902.510/0001-48', 'Chave CNPJ copiada!');
+}
+
+function gerarPix(){
+  const valor = document.getElementById('pix-valor').value;
+  const payload = montarPayloadPix(valor);
+
+  const area = document.getElementById('pix-qr-area');
+  area.classList.remove('hidden');
+
+  document.getElementById('pix-qrcode').innerHTML = '';
+  new QRCode(document.getElementById('pix-qrcode'), { text: payload, width: 170, height: 170, colorDark: '#08090C', colorLight: '#ffffff' });
+  document.getElementById('pix-copia-cola').textContent = payload;
+  area.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function copiarPixCopiaCola(){
+  const texto = document.getElementById('pix-copia-cola').textContent;
+  copiarTexto(texto, 'Código PIX Copia e Cola copiado!');
+}
+
+/* =========================================================
+   COMPARTILHAMENTO NATIVO & WHATS DIRECT
+========================================================= */
+function compartilharNativo(){
+  const payload = getSharePayload();
+  if(navigator.share){
+    navigator.share({
+      title: payload.title,
+      text: payload.text
+    }).catch(()=>{});
+  } else {
+    copiarLink();
+  }
+}
+
+function whatsDirect(){
+  const ddd = document.getElementById('wd-ddd').value.replace(/\D/g, '');
+  const num = document.getElementById('wd-numero').value.replace(/\D/g, '');
+  if(!ddd || !num){ toast('Preencha DDD e número'); return; }
+  const payload = getSharePayload();
+  window.open(`https://api.whatsapp.com/send?phone=55${ddd}${num}&text=${encodeURIComponent(payload.text)}`, '_blank');
+}
+
+function copiarLink(){
+  const payload = getSharePayload();
+  copiarTexto(payload.text, 'Mensagem e link copiados!');
+}
+
+function copiarTexto(texto, msg){
+  navigator.clipboard.writeText(texto)
+    .then(() => toast(msg))
+    .catch(()=>{
+      const ta = document.createElement('textarea');
+      ta.value = texto; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+      toast(msg);
+    });
+}
+
+/* =========================================================
+   VCARD COMPLETO
+========================================================= */
+function downloadVCard(){
+  const siteUrl = window.location.href;
+  const vcard = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'PRODID:-//Uniao Auto Parts//Oficial//PT',
+    'N:Auto Parts;União;;;',
+    'FN:União Auto Parts | Ricardson',
+    'ORG:União Auto Parts - Peças e Lubrificantes',
+    'TITLE:Atendimento e Socorro 24h',
+    'TEL;TYPE=CELL,VOICE,PREF:+5564999629220',
+    'ADR;TYPE=WORK,POSTAL,PARCEL:;;Av. Humberto Mendonça, Qd. 35, Lt. 13 - São José;Palmeiras de Goiás;GO;76190-000;Brasil',
+    'URL;TYPE=WEBSITE:' + siteUrl,
+    'URL;TYPE=MAPS:https://maps.app.goo.gl/iCXWBS5NXq7VDHB27?g_st=ac',
+    'NOTE:Troca de Óleo, Lubrificantes, Baterias Moura e Jet, Freios em Geral, Escapamentos, Lava Jato e Plantão Socorro 24h.\\nChave PIX (CNPJ): 26.902.510/0001-48',
+    'CATEGORIES:Auto Parts,Oficina,Troca de Óleo,Baterias,Freios,Escapamentos,Lava Jato',
+    'END:VCARD'
+  ].join('\r\n');
+
+  const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'Uniao_Auto_Parts.vcf';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  toast('Contato salvo na agenda!');
+}
+
+/* =========================================================
+   FAB: EVITA SOBREPOR O RODAPÉ
+========================================================= */
+(function(){
+  const fab = document.getElementById('wa-fab');
+  const footer = document.querySelector('footer');
+  if(!fab || !footer) return;
+
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const overlap = entry.intersectionRect.height + 18;
+        fab.style.transform = `translateY(-${overlap}px)`;
+      } else {
+        fab.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: [0, 0.2, 0.5, 1.0] });
+
+  observer.observe(footer);
+})();
+
+/* =========================================================
+   PWA MANIFEST & INSTALAÇÃO
+========================================================= */
+(function(){
+  const manifest = {
+    name: "União Auto Parts",
+    short_name: "União Auto Parts",
+    description: "Peças, Lubrificantes, Baterias e Oficina Mecânica em Palmeiras de Goiás - GO.",
+    start_url: ".",
+    scope: ".",
+    display: "standalone",
+    background_color: "#08090C",
+    theme_color: "#FFE500",
+    icons: [
+      { src: LOGO_URL, sizes: "192x192", type: "image/webp" },
+      { src: LOGO_URL, sizes: "512x512", type: "image/webp" }
+    ]
+  };
+  try{
+    const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+    document.getElementById('manifest-link').setAttribute('href', URL.createObjectURL(blob));
+  }catch(e){}
+})();
+
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e)=>{
+  e.preventDefault();
+  deferredPrompt = e;
+});
+
+function instalarPWA(){
+  if(window.matchMedia('(display-mode: standalone)').matches){
+    toast('O aplicativo já está instalado!');
+    return;
+  }
+  if(deferredPrompt){
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult)=>{
+      if(choiceResult.outcome === 'accepted'){
+        toast('Instalando aplicativo...');
+      }
+      deferredPrompt = null;
+    });
+  } else {
+    toast('No Chrome: toque em (⋮) e escolha "Instalar aplicativo"');
+  }
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
